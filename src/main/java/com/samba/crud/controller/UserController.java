@@ -1,6 +1,7 @@
 package com.samba.crud.controller;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,5 +18,8 @@ public User createUser(@RequestBody User user) {
 
 public List<User> getUser(int id) {
 	return service.getAllUsers();
+}
+public Optional<User> getUserById(int id)	{
+	return service.getUserById(id);
 }
 }
