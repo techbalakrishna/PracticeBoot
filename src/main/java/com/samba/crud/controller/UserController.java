@@ -18,4 +18,6 @@ public User createUser(@RequestBody User user) {
 public List<User> getUser(int id) {
 	return service.getAllUsers();
 }
+public User getUserById(int id)	{
+	return service.getUserById(id);
 }
